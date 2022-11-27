@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -157,12 +159,12 @@ export default function Home() {
                 className="img-fluid"
               />
               <p className="fw-light my-4">21 de Novembro 2022</p>
-              <a
-                href="#"
+              <Link
+                to="/News"
                 className="fw-semibold fs-3 my-4 text-decoration-none text-decoration"
               >
                 Imazon estima desmatamento na Amazônia.
-              </a>
+              </Link>
               <p className="my-4 text-black">
                 Quando o assunto é desmatamento na Amazônia tem gente fazendo
                 hora extra nos últimos tempos...

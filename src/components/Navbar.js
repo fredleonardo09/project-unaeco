@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import '../global.css'
 import Logo from '../img/logo-principal.svg'
 
+
 export default function Navbar(){
     return (
       <nav className="navbar navbar-expand-lg navbar-dark background-color-primary">
@@ -31,7 +32,7 @@ export default function Navbar(){
                   to="/"
                   className="nav-link active text-center text-uppercase text-white me-2"
                   aria-current="page"
-                  href="#"
+                  
                 >
                   Início
                 </Link>
@@ -41,7 +42,7 @@ export default function Navbar(){
                 <Link
                   to="/Project"
                   className="nav-link text-center text-uppercase text-white me-2"
-                  href="#"
+                  
                 >
                   Saiba mais <br />
                   sobre o <br />
@@ -54,7 +55,7 @@ export default function Navbar(){
                     
                   <Link to="/Collaboration"
                     className="nav-link text-center text-uppercase text-white me-2"
-                    href="#"
+                    
                   >
                     Parceiros
                   </Link>
@@ -64,7 +65,7 @@ export default function Navbar(){
                 <li className="nav-item">
                   <Link to="/Form"
                     className="nav-link text-center text-uppercase text-white me-4"
-                    href="#"
+                    
                   >
                     Formulário<br />
                     para<br />
