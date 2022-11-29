@@ -1,6 +1,5 @@
 
 import "../global.css";
-import FormEmail from "./FormEmail";
 
 import IconFacebook from "../../src/img/face-white.svg"
 import IconTwitter from "../../src/img/tt-white.svg"
@@ -32,11 +31,7 @@ export default function Footer() {
             </p>
             <img src={IconFacebook} alt="facebook" className="img-fluid m-2" />
             <img src={IconTwitter} alt="twitter" className="img-fluid m-2" />
-            <img
-              src={IconInstagram}
-              alt="instagram"
-              className="img-fluid m-2"
-            />
+            <img src={IconInstagram} alt="instagram" className="img-fluid m-2" />
             <img src={IconLinkedin} alt="linkedin" className="img-fluid m-2" />
           </div>
           <div className="col p-3 d-flex justify-content-md-end">
@@ -60,7 +55,18 @@ export default function Footer() {
                 />
                 Unaeco@unaeco.com
               </div>
-              <FormEmail />
+              <input
+                type="e-mail"
+                className="p-3 flex-grow-1 my-3"
+                placeholder="Digite seu e-mail"
+              />
+              <div className="row">
+                <div className="col">
+                  <button className="btn btn-success px-4" type="submit">
+                    Inscrever
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
