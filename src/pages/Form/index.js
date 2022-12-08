@@ -1,3 +1,5 @@
+
+
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
@@ -5,6 +7,7 @@ import { FormContainer } from "./styled";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+
 
 const schema = yup
   .object({
@@ -18,17 +21,24 @@ export default function Form() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
 
+  
 
-  function onSubmit(userData) {
-    alert("Cadastro realizado com sucesso")
-    
-     
-  }
+
+ const onSubmit = data => {
+   console.log(JSON.stringify(data, null, 2));
+   reset();
+ };
+
+
+ 
+
+
 
   return (
     <FormContainer>
@@ -64,10 +74,18 @@ export default function Form() {
                   {...register("name", { required: true })}
                   type="text"
                   id="name"
-                  className="form-control border-input text-center"
+                  className={`form-control ${
+                    errors.name?.message ? "is-invalid" : ""
+                  }`}
+                  border-input
+                  text-center
                   placeholder="Digite seu nome completo"
+                 
                 />
-                  <span className=""> {errors.name?.message}</span>
+                <span className="position-absolute text-center p-3 d-flex align-items-center">
+                  {" "}
+                  {errors.name?.message}
+                </span>
               </div>
               <div className="row justify-content-center my-5">
                 <div className="col-5">
@@ -82,10 +100,17 @@ export default function Form() {
                       {...register("telephone", { required: true })}
                       type="tel"
                       id="telefone"
-                      className="form-control border-input text-center"
+                      className={`form-control ${
+                        errors.telephone?.message ? "is-invalid" : ""
+                      }`}
+                      border-input
+                      text-center
                       placeholder="Digite seu telefone com DDD"
                     />
-                      <span className=""> {errors.telephone?.message}</span>
+                    <span className="position-absolute text-center p-3 d-flex align-items-center">
+                      {" "}
+                      {errors.telephone?.message}
+                    </span>
                   </div>
                 </div>
                 <div className="col-5">
@@ -98,17 +123,27 @@ export default function Form() {
                     </label>
                     <input
                       {...register("email", { required: true })}
-                      type="email"
+                      type="text"
                       id="email"
-                      className="form-control border-input text-center"
+                      className={`form-control ${
+                        errors.email?.message ? "is-invalid" : ""
+                      }`}
+                      border-input
+                      text-center
                       placeholder="Digite seu e-mail completo"
                     />
-                      <span className=""> {errors.email?.message}</span>
+                    <span className="position-absolute text-center p-3 d-flex align-items-center">
+                      {" "}
+                      {errors.email?.message}
+                    </span>
                   </div>
                 </div>
               </div>
               <div className="col text-center my-5">
-                <button className="btn btn-success px-4" type="submit">
+                <button
+                  type="submit"
+                  className="btn btn-success px-4 my-5"
+                >
                   Inscrever
                 </button>
               </div>

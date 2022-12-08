@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="col ">
               <img src={Chico} alt="Chico-Mendes" className="img-fluid" />
             </div>
-            <div className="col" style={{ zIndex: 1, marginLeft: "-20%" }}>
+            <div className="col" style={{ zIndex: 1, marginLeft: "-12%" }}>
               <p className="fw-bold fs-3 text-center ms-md-1">
                 Chico Mendes{" "}
                 <span className="fs-4 fw-light">Ambientalista</span>
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
           </div>
           <div className="row row-cols-2 px-2 row-cols-lg-3 my-5 d-flex justify-content-between">
-            <div className="col">
+            <div className="col g-2">
               <img
                 src={BannerNoticia}
                 alt="banner noticias 1"
@@ -161,7 +161,7 @@ export default function Home() {
               <p className="fw-light my-4">21 de Novembro 2022</p>
               <Link
                 to="/News"
-                className="fw-semibold fs-3 my-4 text-decoration-none text-decoration"
+                className="fw-semibold fs-5 my-4 text-decoration-none text-decoration"
               >
                 Imazon estima desmatamento na Amazônia.
               </Link>
@@ -170,38 +170,38 @@ export default function Home() {
                 hora extra nos últimos tempos...
               </p>
             </div>
-            <div className="col">
+            <div className="col g-2">
               <img
                 src={BannerNoticiatwo}
                 alt="banner noticias 2"
                 className="img-fluid"
               />
               <p className="fw-light my-4">23 de Novembro 2022</p>
-              <a
+              <NavLink
                 href="#"
-                className="fw-semibold fs-3 my-4 text-decoration-none text-decoration"
+                className="fw-semibold fs-5 my-4 text-decoration-none text-decoration"
               >
                 Conheça 9 macacos do Brasil ameaçados de extinção.
-              </a>
+              </NavLink>
               <p className="my-4 text-black">
                 Veja algumas espécies de primatas brasileiros que correm risco
                 de desaparecerem do planeta!
               </p>
             </div>
-            <div className="col">
+            <div className="col g-2">
               <img
                 src={BannerNoticiathree}
                 alt="banner noticias 3"
                 className="img-fluid"
               />
               <p className="fw-light my-4">24 de Novembro 2022</p>
-              <a
+              <NavLink
                 href="#"
-                className="fw-semibold fs-3 my-4 text-decoration-none text-decoration"
+                className="fw-semibold fs-5 my-4 text-decoration-none text-decoration"
               >
                 Extintas e ameaçadas: livro reúne fotos e informações de aves
                 brasileiras.
-              </a>
+              </NavLink>
               <p className="my-4 text-black">
                 303 espécies e subespécies encontradas no Brasil correm risco de
                 extinção; obra poderá ser adquirida a partir de 11 de agosto.

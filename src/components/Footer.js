@@ -31,7 +31,11 @@ export default function Footer() {
             </p>
             <img src={IconFacebook} alt="facebook" className="img-fluid m-2" />
             <img src={IconTwitter} alt="twitter" className="img-fluid m-2" />
-            <img src={IconInstagram} alt="instagram" className="img-fluid m-2" />
+            <img
+              src={IconInstagram}
+              alt="instagram"
+              className="img-fluid m-2"
+            />
             <img src={IconLinkedin} alt="linkedin" className="img-fluid m-2" />
           </div>
           <div className="col p-3 d-flex justify-content-md-end">
@@ -48,6 +52,7 @@ export default function Footer() {
                 endereço
               </div>
               <div className="text-white py-2 mt-2 mt-lg-2">
+                
                 <img
                   src={IconEmail}
                   alt="Icone e-mail"

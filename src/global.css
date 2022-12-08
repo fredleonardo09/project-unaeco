@@ -39,6 +39,8 @@
 .btn-success{
   background-color: var(--btn-color-primary);
   border: none;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 a {
@@ -51,4 +53,5 @@ a {
 a:hover {
   color: var(--a-color-link-primary);
 }
+
 

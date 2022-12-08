@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../global.css'
 import Logo from '../img/logo-principal.svg'
 
@@ -7,13 +7,13 @@ export default function Navbar(){
     return (
       <nav className="navbar navbar-expand-lg navbar-dark background-color-primary">
         <div className="container">
-          <Link to="/">
+          <NavLink to="/">
             <img
               src={Logo}
               alt="logo-principal"
               className="img-fluid px-5 my-5"
             />
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler me-3"
             type="button"
@@ -28,54 +28,52 @@ export default function Navbar(){
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto mt-3">
               <li className="nav-item">
-                <Link
+                <NavLink
                   to="/"
-                  className="nav-link active text-center text-uppercase text-white me-2"
+                  className="nav-link active text-center text-uppercase text-white me-2 link-warning"
                   aria-current="page"
-                  
+                  activeClassName="active-link"
                 >
                   Início
-                </Link>
+                </NavLink>
               </li>
 
               <li className="nav-item">
-                <Link
+                <NavLink
                   to="/Project"
-                  className="nav-link text-center text-uppercase text-white me-2"
-                  
+                  className="nav-link text-center text-uppercase text-white me-2 link-warning"
+                  activeClassName="active-link"
                 >
                   Saiba mais <br />
                   sobre o <br />
                   projeto
-                </Link>
+                </NavLink>
               </li>
 
-              
-                <li className="nav-item">
-                    
-                  <Link to="/Collaboration"
-                    className="nav-link text-center text-uppercase text-white me-2"
-                    
-                  >
-                    Parceiros
-                  </Link>
-                </li>
-              
-              
-                <li className="nav-item">
-                  <Link to="/Form"
-                    className="nav-link text-center text-uppercase text-white me-4"
-                    
-                  >
-                    Formulário<br />
-                    para<br />
-                    inscrição
-                  </Link>
-                </li>
-              
+              <li className="nav-item">
+                <NavLink
+                  to="/Collaboration"
+                  className="nav-link text-center text-uppercase text-white me-2 link-warning"
+                >
+                  Parceiros
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
+                  to="/Form"
+                  className="nav-link text-center text-uppercase text-white me-4 link-warning"
+                >
+                  Formulário
+                  <br />
+                  para
+                  <br />
+                  inscrição
+                </NavLink>
+              </li>
             </ul>
             <div className="nav-item d-flex justify-content-center ">
-              <button className="btn btn-success text-center text-uppercase mt-md-2 px-4">
+              <button className="btn btn-success text-center text-uppercase mt-md-3 px-1">
                 doe agora
               </button>
             </div>

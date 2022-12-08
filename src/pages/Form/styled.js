@@ -10,14 +10,15 @@ export const FormContainer = styled.div`
   }
 
   input::placeholder {
-    color: #000000;
-    font-size: 15px;
+    color: #858585;
+    opacity: calc();
+    font-size: 13px;
     padding: 15px;
   }
 
   span {
     color: #dab927;
-  
+    font-size: 12px;
   }
 `;
 
