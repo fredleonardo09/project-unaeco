@@ -60,8 +60,8 @@ export default function Form() {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center my-3 ">
-          <div className="col-8 ">
+        <div className="row justify-content-center my-md-3 ">
+          <div className="col-12 col-md-8 ">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className=" text-center">
                 <label
@@ -80,15 +80,14 @@ export default function Form() {
                   border-input
                   text-center
                   placeholder="Digite seu nome completo"
-                 
                 />
-                <span className="position-absolute text-center p-3 d-flex align-items-center">
+                <div className="message position-absolute text-center p-3 d-flex align-items-center">
                   {" "}
                   {errors.name?.message}
-                </span>
+                </div>
               </div>
               <div className="row justify-content-center my-5">
-                <div className="col-5">
+                <div className="col-8 col-md-5">
                   <div className=" text-center">
                     <label
                       htmlFor="telefone"
@@ -107,13 +106,13 @@ export default function Form() {
                       text-center
                       placeholder="Digite seu telefone com DDD"
                     />
-                    <span className="position-absolute text-center p-3 d-flex align-items-center">
+                    <div className="message position-absolute text-center p-3 d-flex align-items-center">
                       {" "}
                       {errors.telephone?.message}
-                    </span>
+                    </div>
                   </div>
                 </div>
-                <div className="col-5">
+                <div className="col-8 col-md-5 my-5 my-md-0 ">
                   <div className=" text-center">
                     <label
                       htmlFor="email"
@@ -132,18 +131,15 @@ export default function Form() {
                       text-center
                       placeholder="Digite seu e-mail completo"
                     />
-                    <span className="position-absolute text-center p-3 d-flex align-items-center">
+                    <div className="message position-absolute text-center p-3 d-flex align-items-center">
                       {" "}
                       {errors.email?.message}
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col text-center my-5">
-                <button
-                  type="submit"
-                  className="btn btn-success px-4 my-5"
-                >
+                <button type="submit" className="btn btn-success px-4 my-5">
                   Inscrever
                 </button>
               </div>

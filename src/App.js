@@ -7,6 +7,7 @@ import Project from './pages/Project'
 import Collaboration from './pages/Collaboration'
 import Form from './pages/Form'
 import News from './pages/News'
+import Donation from './pages/Donation'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Collaboration" element={<Collaboration />} />
         <Route path="/Form" element={<Form />} />
         <Route path="/News" element={<News />} />
+        <Route path="/Donation" element={<Donation />} />
       </Routes>
     </Router>
   );

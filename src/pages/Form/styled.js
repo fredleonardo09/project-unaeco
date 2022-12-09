@@ -16,7 +16,7 @@ export const FormContainer = styled.div`
     padding: 15px;
   }
 
-  span {
+  .message {
     color: #dab927;
     font-size: 12px;
   }

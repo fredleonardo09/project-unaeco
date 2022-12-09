@@ -15,7 +15,8 @@ export default function Navbar(){
             />
           </NavLink>
           <button
-            className="navbar-toggler me-3"
+            className="navbar-toggler me-3 "
+            style={{ marginLeft: "35px" }}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -23,9 +24,12 @@ export default function Navbar(){
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon "></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto mt-3">
               <li className="nav-item">
                 <NavLink
@@ -73,9 +77,11 @@ export default function Navbar(){
               </li>
             </ul>
             <div className="nav-item d-flex justify-content-center ">
-              <button className="btn btn-success text-center text-uppercase mt-md-3 px-1">
-                doe agora
-              </button>
+              <NavLink to="/Donation">
+                <button className="btn btn-success text-center text-uppercase mt-md-3 px-1">
+                  doe agora
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>
