@@ -1,11 +1,11 @@
-
+import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 import { DonationContainer } from "./style";
 
-import BannerAjudaroMundo from "../../img/banner-ajudar-o-mundo.svg"
-import IconeDoar from "../../img/icone-brotar.svg"
+import BannerAjudaroMundo from "../../img/banner-ajudar-o-mundo.svg";
+import IconeDoar from "../../img/icone-brotar.svg";
 
 export default function Donation() {
   return (
@@ -26,7 +26,7 @@ export default function Donation() {
               </div>
             </div>
             <div className="row my-5 justify-content-center">
-              <div className="col-3 text-center me-5">
+              <div className="col-9 my-3 col-md-3 text-center me-5">
                 <div className="card border-card ">
                   <div className="card-body">
                     <img
@@ -46,7 +46,7 @@ export default function Donation() {
                   </div>
                 </div>
               </div>
-              <div className="col-3 text-center me-5">
+              <div className="col-9 my-3 col-md-3 text-center me-5">
                 <div className="card border-card">
                   <div className="card-body">
                     <img
@@ -66,7 +66,7 @@ export default function Donation() {
                   </div>
                 </div>
               </div>
-              <div className="col-3 text-center me-5">
+              <div className="col-9 my-3 col-md-3  text-center me-5">
                 <div className="card border-card">
                   <div className="card-body">
                     <img

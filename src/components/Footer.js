@@ -1,10 +1,10 @@
-
+import React from "react";
 import "../global.css";
 
-import IconFacebook from "../../src/img/face-white.svg"
-import IconTwitter from "../../src/img/tt-white.svg"
-import IconInstagram from "../../src/img/insta-white.svg"
-import IconLinkedin from "../../src/img/linkedin-white.svg"
+import IconFacebook from "../../src/img/face-white.svg";
+import IconTwitter from "../../src/img/tt-white.svg";
+import IconInstagram from "../../src/img/insta-white.svg";
+import IconLinkedin from "../../src/img/linkedin-white.svg";
 
 import IconEndereco from "../../src/img/end-white.svg";
 import IconEmail from "../../src/img/email-white.svg";
@@ -52,7 +52,6 @@ export default function Footer() {
                 endereço
               </div>
               <div className="text-white py-2 mt-2 mt-lg-2">
-                
                 <img
                   src={IconEmail}
                   alt="Icone e-mail"
@@ -85,7 +84,7 @@ export default function Footer() {
             <div className="">
               <p className="text-white text-uppercase">
                 politíca de privacidade{" "}
-                <span className="px-3">termos de uso</span>
+                <span className="px-0 px-md-3">termos de uso</span>
               </p>
             </div>
           </div>

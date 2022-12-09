@@ -1,9 +1,9 @@
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import Collaboration from "../Collaboration"
-
+import Collaboration from "../Collaboration";
 
 import Trevo from "../../img/trevo.svg";
 import BannerPrincipal from "../../img/banner-principal.svg";
@@ -22,7 +22,6 @@ import BannerNoticiathree from "../../img/banners-noticias (3).svg";
 
 import BannerDoe from "../../img/banners-doe01.svg";
 import BannerDoetwo from "../../img/banners-doe02.svg";
-
 
 export default function Home() {
   return (

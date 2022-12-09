@@ -1,4 +1,4 @@
-
+import React from "react";
 
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
@@ -8,12 +8,17 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-
 const schema = yup
   .object({
     name: yup.string().required("O nome é obrigatório"),
-    telephone: yup.string().min(11,"Digite um telefone válido com DDD").required("O telefone é obrigatório"),
-    email: yup.string().email("Digite um e-mail válido").required("O e-mail é obrigatório"),
+    telephone: yup
+      .string()
+      .min(11, "Digite um telefone válido com DDD")
+      .required("O telefone é obrigatório"),
+    email: yup
+      .string()
+      .email("Digite um e-mail válido")
+      .required("O e-mail é obrigatório"),
   })
   .required();
 
@@ -27,18 +32,10 @@ export default function Form() {
     resolver: yupResolver(schema),
   });
 
-  
-
-
- const onSubmit = data => {
-   console.log(JSON.stringify(data, null, 2));
-   reset();
- };
-
-
- 
-
-
+  const onSubmit = (data) => {
+    console.log(JSON.stringify(data, null, 2));
+    reset();
+  };
 
   return (
     <FormContainer>

@@ -1,3 +1,5 @@
+    import React from "react";
+    
     import ParceiroHSBC from "../../img/HSBC svg.svg";
     import ParceiroCapital from "../../img/Capital One svg.svg";
     import ParceiroBradesco from "../../img/Banco Bradesco - png.svg";

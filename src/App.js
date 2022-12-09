@@ -1,14 +1,12 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
-
-import Home from './pages/Home'
-import Project from './pages/Project'
-import Collaboration from './pages/Collaboration'
-import Form from './pages/Form'
-import News from './pages/News'
-import Donation from './pages/Donation'
-
+import Home from "./pages/Home";
+import Project from "./pages/Project";
+import Collaboration from "./pages/Collaboration";
+import Form from "./pages/Form";
+import News from "./pages/News";
+import Donation from "./pages/Donation";
 
 function App() {
   return (
