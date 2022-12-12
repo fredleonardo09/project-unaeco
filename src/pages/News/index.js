@@ -7,7 +7,7 @@ import { NewsPage } from "./styled";
 import ImgNoticia1 from "../../img/img-noticia1.svg";
 import ImgNoticia2 from "../../img/img-noticia2.svg";
 import ImgNoticia3 from "../../img/img-noticia3.svg";
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 
 export default function News() {
   return (
@@ -16,7 +16,7 @@ export default function News() {
         <Navbar />
         <div className="container">
           <div className="row ">
-            <div className="col-12 ">
+            <div className="col-12 my-5 col-md-12 ">
               <h1 className="text-white fw-semibold text-center">
                 Imazon estima desmatamento na Amazônia de <br /> quase 10 mil
                 km2 em 10 meses
@@ -73,37 +73,39 @@ export default function News() {
               <figcaption class="figure-caption text-white">
                 ClimaInfo, 21 de novembro de 2022.
               </figcaption>
-              <h5 className="text-white my-5">Outras Notícias </h5>
+              <h5 className="text-white mt-5">Outras Notícias </h5>
             </div>
           </div>
           <div className="row text-white justify-content-center">
-            <div className="col-5 g-5">
+            <div className="col-7 col-md-5 g-5">
               <img
                 src={ImgNoticia2}
                 alt="banner noticias 2"
                 className="img-fluid"
               />
               <p className="fw-light my-4">23 de Novembro 2022</p>
-              <NavLink className="fw-semibold fs-3 my-4 text-decoration-none text-decoration text-white ">
+              <div className="fw-semibold fs-3 my-4 text-decoration-none text-decoration text-white ">
                 Conheça 9 macacos do Brasil ameaçados de extinção.
-              </NavLink>
+              </div>
               <p className="my-4 ">
                 Veja algumas espécies de primatas brasileiros que correm risco
                 de desaparecerem do planeta!
               </p>
             </div>
-            <div className="col-5 g-5 m-5">
+            <div className="col-7 col-md-5 g-5 m-5">
               <img
                 src={ImgNoticia3}
                 alt="banner noticias 3"
                 className="img-fluid"
               />
               <p className="fw-light my-4 text-white">24 de Novembro 2022</p>
-              <NavLink>
-                href="#" className="fw-semibold fs-3 my-4 text-decoration-none
-                text-decoration text-white" > Extintas e ameaçadas: livro reúne
-                fotos e informações de aves brasileiras.
-              </NavLink>
+              <div
+                className="fw-semibold fs-3 my-4 text-decoration-none
+                text-decoration text-white"
+              >
+               Extintas e ameaçadas: livro reúne fotos e
+                informações de aves brasileiras.
+              </div>
               <p className="my-4 text-white ">
                 303 espécies e subespécies encontradas no Brasil correm risco de
                 extinção; obra poderá ser adquirida a partir de 11 de agosto.

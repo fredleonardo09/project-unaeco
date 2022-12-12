@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../global.css";
 
 import IconFacebook from "../../src/img/face-white.svg";
@@ -10,6 +10,13 @@ import IconEndereco from "../../src/img/end-white.svg";
 import IconEmail from "../../src/img/email-white.svg";
 
 export default function Footer() {
+
+  const [email, setEmail] = useState('')
+  
+  const handleInputChange = (event) =>{
+    console.log(handleInputChange);
+
+  }
   return (
     <footer className="mt-5 background-color-primary background-color-primary-border-top">
       <div className="container">
@@ -63,10 +70,16 @@ export default function Footer() {
                 type="e-mail"
                 className="p-3 flex-grow-1 my-3"
                 placeholder="Digite seu e-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <div className="row">
                 <div className="col">
-                  <button className="btn btn-success px-4" type="submit">
+                  <button
+                    className="btn btn-success px-4"
+                    type="submit"
+                    onChange={handleInputChange}
+                  >
                     Inscrever
                   </button>
                 </div>
@@ -83,7 +96,7 @@ export default function Footer() {
             </div>
             <div className="">
               <p className="text-white text-uppercase">
-                politíca de privacidade{" "}
+                politíca de privacidade
                 <span className="px-0 px-md-3">termos de uso</span>
               </p>
             </div>
