@@ -1,7 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
+// Estilo do Site //
 import "../global.css";
 
+// Imagens do Site //
 import Logo from "../img/logo-principal.svg";
 
 export default function Navbar() {
@@ -27,12 +30,15 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon "></span>
         </button>
-        <div className="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto mt-3">
+        <div
+          className="collapse navbar-collapse align-items-center "
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto mt-3 ">
             <li className="nav-item">
               <NavLink
                 to="/"
-                className="nav-link active text-center text-uppercase text-white me-2 link-warning"
+                className="nav-link active text-center text-uppercase text-white me-2 link-warning "
                 aria-current="page"
                 activeClassName="active-link"
               >
@@ -76,7 +82,7 @@ export default function Navbar() {
           </ul>
           <div className="nav-item d-flex justify-content-center ">
             <NavLink to="/Donation">
-              <button className="btn btn-success text-center text-uppercase mt-md-3 px-1">
+              <button className="btn btn-success text-center text-uppercase mt-md-3 px-3 px-md-2">
                 doe agora
               </button>
             </NavLink>

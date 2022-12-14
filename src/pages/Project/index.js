@@ -1,11 +1,13 @@
 import React from "react";
-//import { Link } from "react-router-dom";
 
+// Componentes do Site //
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
+// Estilo do Site //
 import "../../global.css";
 
+// Imagens do Site //
 import ImgProject from "../../img/img-project.svg";
 
 export default function Project() {
@@ -50,9 +52,7 @@ export default function Project() {
                 Ainda há tempo de parar essa destruição. Junte-se a nós nessa
                 luta!
               </p>
-              <button className="btn btn-success text-center text-uppercase me-5 mt-md-2 px-4 ">
-                doar
-              </button>
+            
             </div>
           </div>
         </div>

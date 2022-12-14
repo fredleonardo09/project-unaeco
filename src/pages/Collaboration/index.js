@@ -1,14 +1,23 @@
     import React from "react";
+
+    // Componentes do Site //
+    
+    import Navbar from "../../components/Navbar";
+    import Footer from "../../components/Footer";
+
+    // Imagens do Site //
     
     import ParceiroHSBC from "../../img/HSBC svg.svg";
     import ParceiroCapital from "../../img/Capital One svg.svg";
     import ParceiroBradesco from "../../img/Banco Bradesco - png.svg";
     import ParceiroAdobe from "../../img/Adobe svg.svg";
 
+
     export default function Collaboration() {
         return(
             <>
-                <section className="my-5">
+                <Navbar />
+                    <section className="my-5">
                     <div className="container">
                     <div className="row">
                         <div className="col-md-12 my-5">
@@ -40,7 +49,8 @@
                         </div>
                     </div>
                     </div>
-                </section>;
+                    </section>;
+                <Footer />   
             </>
         )
     }

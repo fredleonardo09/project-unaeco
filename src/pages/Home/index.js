@@ -1,25 +1,25 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
+// Componentes do Site //
+
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import Collaboration from "../Collaboration";
+
+
+// Imagens do Site //
 
 import Trevo from "../../img/trevo.svg";
 import BannerPrincipal from "../../img/banner-principal.svg";
-
 import DesmatamentoOne from "../../img/desmatamento1.svg";
 import Desmatamentotwo from "../../img/desmatamento2.svg";
 import Ecologia from "../../img/ecologia-e-meio-ambiente.svg";
 import Brotar from "../../img/brotar.svg";
 import Reciclar from "../../img/reciclar.svg";
-
 import Chico from "../../img/chico-mendes.svg";
-
 import BannerNoticia from "../../img/banners-noticias (1).svg";
 import BannerNoticiatwo from "../../img/banners-noticias (2).svg";
 import BannerNoticiathree from "../../img/banners-noticias (3).svg";
-
 import BannerDoe from "../../img/banners-doe01.svg";
 import BannerDoetwo from "../../img/banners-doe02.svg";
 
@@ -39,6 +39,16 @@ export default function Home() {
                 Juntos, vamos conquistar o Desmatamento Zero, a solução viável
                 rápida e barata para combater as mudanças climáticas.
               </p>
+              <div className="d-flex justify-content-center ">
+                <NavLink to="/Donation">
+                  <button
+                    className="btn btn-success text-center text-uppercase mt-md-3 px-5 "
+                    style={{ width: "320px", height: "50px", fontSize: "20px" }}
+                  >
+                    Faça sua doação
+                  </button>
+                </NavLink>
+              </div>
             </div>
             <div className="col-6 my-5 d-none d-md-block ">
               <img
@@ -148,7 +158,7 @@ export default function Home() {
               <p className="fw-semibold fs-3 text-black">Últimas notícias</p>
             </div>
           </div>
-          <div className="row row-cols-2 px-2 row-cols-lg-3 my-5 d-flex justify-content-between">
+          <div className="row row-cols-2 px-2 row-cols-lg-3 g-1 my-5 d-flex justify-content-between">
             <div className="col g-2">
               <img
                 src={BannerNoticia}
@@ -235,9 +245,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <NavLink to="/Collaboration">
-        <Collaboration />
-      </NavLink>
+
       <Footer />
     </>
   );

@@ -1,8 +1,11 @@
 import React from "react";
 
+// Componentes do Site //
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
+
+// Formulário do Site com Hook Form //
 import { FormContainer } from "./styled";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

@@ -1,21 +1,24 @@
 import React, {useState} from "react";
+
+// Estilo do Site //
 import "../global.css";
 
+// Imagens do Site //
 import IconFacebook from "../../src/img/face-white.svg";
 import IconTwitter from "../../src/img/tt-white.svg";
 import IconInstagram from "../../src/img/insta-white.svg";
 import IconLinkedin from "../../src/img/linkedin-white.svg";
-
 import IconEndereco from "../../src/img/end-white.svg";
 import IconEmail from "../../src/img/email-white.svg";
 
 export default function Footer() {
-
-  const [email, setEmail] = useState('')
   
-  const handleInputChange = (event) =>{
-    console.log(handleInputChange);
+  // Formulário de cadastro do e-mail do Site //
+  const [email, setEmail] = useState("");
 
+  function handleInputChange(e) {
+    e.preventDefault();
+    alert("Cadastro concluido");
   }
   return (
     <footer className="mt-5 background-color-primary background-color-primary-border-top">
@@ -66,24 +69,22 @@ export default function Footer() {
                 />
                 Unaeco@unaeco.com
               </div>
-              <input
-                type="e-mail"
-                className="p-3 flex-grow-1 my-3"
-                placeholder="Digite seu e-mail"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <div className="row">
-                <div className="col">
-                  <button
-                    className="btn btn-success px-4"
-                    type="submit"
-                    onChange={handleInputChange}
-                  >
-                    Inscrever
-                  </button>
+              <form onSubmit={handleInputChange}>
+                <input
+                  type="e-mail"
+                  className="p-3 flex-grow-1 my-3"
+                  placeholder="Digite seu e-mail"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <div className="row">
+                  <div className="col">
+                    <button className="btn btn-success px-4" type="submit">
+                      Inscrever
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
